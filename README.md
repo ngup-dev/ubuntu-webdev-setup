@@ -23,29 +23,29 @@
 ### Commands
 
 
-1.  `sudo apt-get update`
+1. `sudo apt-get update`
 
-2.  `sudo apt-get install curl build-essential libssl-dev`
+2. `sudo apt-get install curl build-essential libssl-dev`
 
-3.  `curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb`
-    `sudo dpkg -i google-chrome-stable_current_amd64.deb`
+3. `curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb`
+   `sudo dpkg -i google-chrome-stable_current_amd64.deb`
 
-4.  `curl https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash`
-    `source ~/.profile`
+4. `curl https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash`
+   `source ~/.profile`
 
-5.  `nvm install node`
-    `nvm install --lts`
-    `nvm use --lts`
+5. `nvm install node`
+   `nvm install --lts`
+   `nvm use --lts`
 
-6.  `sudo apt-get install git-core`
-    `git config --global user.name "your-github-username"`
-    `git config --global user.email "username@mail.com"`
+6. `sudo apt-get install git-core`
+   `git config --global user.name "your-github-username"`
+   `git config --global user.email "username@mail.com"`
 
-7.  `ssh-keygen -t rsa -b 4096 -C "username@mail.com"`
-    `eval "$(ssh-agent -s)"`
-    `ssh-add ~/.ssh/id_rsa`
+7. `ssh-keygen -t rsa -b 4096 -C "username@mail.com"`
+   `eval "$(ssh-agent -s)"`
+   `ssh-add ~/.ssh/id_rsa`
 
-8.  `sudo snap install code --classic`
+8. `sudo snap install code --classic`
 
 12. `npm i -g lite-server`
 
@@ -54,9 +54,9 @@
     `sudo apt-get install -y mongodb`
     `sudo nano /etc/systemd/system/mongodb.service`
 
-  copy the following into file:
+    copy the following into file:
 
-     ```bash 
+    ```bash 
     #Unit contains the dependencies to be satisfied before the service is started.
     [Unit]
     Description=MongoDB Database
@@ -75,14 +75,14 @@
     WantedBy=multi-user.target
     ```
 
-`systemctl daemon-reload`
-`sudo systemctl start mongodb`
+    `systemctl daemon-reload`
+    `sudo systemctl start mongodb`
 
-check if running 
-`sudo systemctl status mongodb`
+    check if running 
+    `sudo systemctl status mongodb`
 
-run mongo on startup
-`sudo systemctl enable mongodb`
+    run mongo on startup
+    `sudo systemctl enable mongodb`
 
-create user
-`mongo -u admin -p <password> --authenticationDatabase admin`
+    create user
+    `mongo -u admin -p <password> --authenticationDatabase admin`
