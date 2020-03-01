@@ -38,8 +38,9 @@
    `nvm use --lts`
 
 6. `sudo apt-get install git-core`
-    `git config --global user.name "your-github-username"`
-    `git config --global user.email "username@mail.com"`
+
+   `git config --global user.name "your-github-username"`
+   `git config --global user.email "username@mail.com"`
 
 7. `ssh-keygen -t rsa -b 4096 -C "username@mail.com"`
    `eval "$(ssh-agent -s)"`
