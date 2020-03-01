@@ -42,8 +42,8 @@
     `git config --global user.email "username@mail.com"`
 
 7.  `ssh-keygen -t rsa -b 4096 -C "username@mail.com"`
-    `eval "$(ssh-agent -s)"`
-    `ssh-add ~/.ssh/id_rsa`
+`eval "$(ssh-agent -s)"`
+`ssh-add ~/.ssh/id_rsa`
 
 8.  `sudo snap install code --classic`
 
