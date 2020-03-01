@@ -18,7 +18,7 @@
   - [x] Vetur
   - [x] vscode-icons
 - [x] Install lite-server
-- [ ] Install MongoDB & run as service
+- [x] Install MongoDB & run as service
 
 ### Commands
 
@@ -90,11 +90,14 @@
     
     `sudo systemctl start mongodb`
 
-    check if running 
+    check if running
+    
     `sudo systemctl status mongodb`
 
     run mongo on startup
+    
     `sudo systemctl enable mongodb`
 
     create user
+    
     `mongo -u admin -p <password> --authenticationDatabase admin`
