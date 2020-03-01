@@ -28,22 +28,29 @@
 2. `sudo apt-get install curl build-essential libssl-dev`
 
 3. `curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb`
+
    `sudo dpkg -i google-chrome-stable_current_amd64.deb`
 
 4. `curl https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash`
+
    `source ~/.profile`
 
 5. `nvm install node`
+
    `nvm install --lts`
+   
    `nvm use --lts`
 
 6. `sudo apt-get install git-core`
 
    `git config --global user.name "your-github-username"`
+   
    `git config --global user.email "username@mail.com"`
 
 7. `ssh-keygen -t rsa -b 4096 -C "username@mail.com"`
+
    `eval "$(ssh-agent -s)"`
+   
    `ssh-add ~/.ssh/id_rsa`
 
 8. `sudo snap install code --classic`
@@ -51,8 +58,11 @@
 12. `npm i -g lite-server`
 
 13. `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10`
+
     `sudo apt-get update`
+    
     `sudo apt-get install -y mongodb`
+    
     `sudo nano /etc/systemd/system/mongodb.service`
 
     copy the following into file:
@@ -77,6 +87,7 @@
     ```
 
     `systemctl daemon-reload`
+    
     `sudo systemctl start mongodb`
 
     check if running 
